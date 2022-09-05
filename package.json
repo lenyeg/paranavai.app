@@ -2,7 +2,6 @@
   "name": "paranavai.app",
   "version": "1.0.0",
   "description": "",
-  "main": "src/app.vue",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -12,13 +11,16 @@
     "test": "npx vitest run --dir tests",
     "lint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore ."
   },
+  "engines": {
+    "node": "16.x"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lenyeg/paranavai.app.git"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/lenyeg/paranavai.app/issues"
   },
