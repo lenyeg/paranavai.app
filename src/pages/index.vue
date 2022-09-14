@@ -57,7 +57,7 @@ useHead({
 })
 </script>
 
-<style module>
+<style lang="postcss" module>
 .main {
   @apply h-screen w-screen flex items-center justify-center overflow-hidden flex-col gap-y-8;
 
