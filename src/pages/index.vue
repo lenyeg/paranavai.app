@@ -1,5 +1,6 @@
 <template>
   <div :class="$style.main">
+    <TheHeader />
     <h1>
       O mundo evoluiu,<br />
       é a vez de Paranavaí.
