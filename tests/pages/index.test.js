@@ -12,6 +12,6 @@ describe('ssr', async () => {
     // Get response to a server-rendered page with `$fetch`.
     const html = await $fetch('/')
 
-    expect(html).toContain('Hello world!')
+    expect(html).toContain('O mundo evoluiu')
   })
 })
