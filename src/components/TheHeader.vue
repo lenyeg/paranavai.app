@@ -1,6 +1,6 @@
 <template>
   <div class="relative container mx-auto">
-    <div class="relative pt-6 pb-16 sm:pb-24">
+    <div class="relative pt-6 sm:pb-24">
       <Popover>
         <div class="mx-auto px-4 sm:px-6">
           <nav
@@ -88,7 +88,7 @@
       </Popover>
 
       <main
-        class="container mx-auto sm:mt-24 flex flex-col justify-center items-center mt-16 px-4 lg:flex-row lg:justify-between"
+        class="container mx-auto sm:mt-24 flex flex-col justify-center items-center mt-16 px-4 gap-4 lg:flex-row lg:justify-between"
       >
         <div class="flex flex-col items-center gap-4 lg:items-start">
           <h1

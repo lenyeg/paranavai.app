@@ -1,6 +1,7 @@
 <template>
   <div :class="$style.main">
     <TheHeader />
+    <TheCustomers />
   </div>
 </template>
 
@@ -56,11 +57,10 @@ useHead({
 <style lang="postcss" module>
 .main {
   background: linear-gradient(0deg, rgba(182, 217, 212, 0) 0%, #cfe6e2 100%);
+  font-family: Poppins, sans-serif;
 
   h1 {
     @apply text-3xl font-black text-[#374151];
-
-    font-family: Poppins, sans-serif;
   }
 }
 </style>
