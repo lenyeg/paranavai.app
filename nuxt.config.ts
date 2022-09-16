@@ -7,6 +7,9 @@ export default defineNuxtConfig({
   rootDir: './src/',
   target: 'static',
   modules: ['@nuxtjs/tailwindcss'],
+  build: {
+    transpile: ['@headlessui/vue'],
+  },
 
   runtimeConfig: {
     public: {
