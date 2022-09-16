@@ -2,7 +2,7 @@
   <div
     class="container flex flex-col items-center justify-center py-8 m-auto text-gray-800"
   >
-    <h2 class="px-4 text-center text-gray-700 sm:text-4xl lg:px-0">
+    <h2 class="px-4 text-center text-gray-700 lg:text-2xl lg:px-0">
       Faça como eles e seja encontrado:
     </h2>
     <div
