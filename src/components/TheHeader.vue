@@ -157,7 +157,7 @@ import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline/index.js'
 
 const navigation = [
-  { name: 'Quem somos', href: '#' },
+  { name: 'Quem somos', href: '/#about-us' },
   { name: 'Preço', href: '#' },
   { name: 'Perguntas frequentes', href: '#' },
 ]

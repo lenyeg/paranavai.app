@@ -2,6 +2,7 @@
   <div :class="$style.main">
     <TheHeader />
     <TheCustomers />
+    <TheAboutUs />
   </div>
 </template>
 
@@ -55,6 +56,9 @@ useHead({
 </script>
 
 <style lang="postcss" module>
+:root {
+  scroll-behavior: smooth;
+}
 .main {
   background: linear-gradient(0deg, rgba(182, 217, 212, 0) 0%, #cfe6e2 100%);
   font-family: Poppins, sans-serif;
