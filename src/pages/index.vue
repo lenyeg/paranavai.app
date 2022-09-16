@@ -1,11 +1,6 @@
 <template>
   <div :class="$style.main">
     <TheHeader />
-    <h1>
-      O mundo evoluiu,<br />
-      é a vez de Paranavaí.
-    </h1>
-    <img src="/images/logo.svg" alt="" />
   </div>
 </template>
 
@@ -60,16 +55,10 @@ useHead({
 
 <style lang="postcss" module>
 .main {
-  @apply h-screen w-screen flex items-center justify-center overflow-hidden flex-col gap-y-8;
-
   background: linear-gradient(0deg, rgba(182, 217, 212, 0) 0%, #cfe6e2 100%);
 
-  img {
-    @apply max-w-[80%] md:max-w-[500px];
-  }
-
   h1 {
-    @apply text-3xl font-black text-[#374151] text-center;
+    @apply text-3xl font-black text-[#374151];
 
     font-family: Poppins, sans-serif;
   }

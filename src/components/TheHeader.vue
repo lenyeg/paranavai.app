@@ -1,8 +1,8 @@
 <template>
-  <div class="relative container">
+  <div class="relative container mx-auto">
     <div class="relative pt-6 pb-16 sm:pb-24">
       <Popover>
-        <div class="mx-auto max-w-7xl px-4 sm:px-6">
+        <div class="mx-auto px-4 sm:px-6">
           <nav
             class="relative flex items-center justify-between sm:h-10 md:justify-center"
             aria-label="Global"
@@ -87,26 +87,33 @@
         </transition>
       </Popover>
 
-      <main class="mx-auto mt-16 container px-4 sm:mt-24">
-        <div class="text-center">
+      <main
+        class="container mx-auto sm:mt-24 flex flex-col justify-center items-center mt-16 px-4 lg:flex-row lg:justify-between"
+      >
+        <div class="flex flex-col items-center gap-4 lg:items-start">
           <h1
-            class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl"
+            class="flex flex-col items-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:items-start lg:max-w-[50%] xl:max-w-[595px]"
           >
-            <span class="block">O mundo evoluiu,</span>
+            <span class="block lg:text-start lg:text-5xl"
+              >O mundo evoluiu,</span
+            >
             {{ ' ' }}
-            <span class="block">é a vez de Paranavaí.</span>
+            <span class="block lg:text-start lg:text-5xl"
+              >é a vez de Paranavaí.</span
+            >
           </h1>
           <p
-            class="mx-auto mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:max-w-3xl md:text-xl"
+            class="mx-auto mt-3 text-base text-gray-500 text-center sm:text-lg md:mt-5 lg:max-w-md md:text-xl lg:text-start lg:mx-0"
           >
-            Estamos digitalizando a nossa cidade! Vá além da presença física e
-            seja encontrado por quem precisa de você.
+            Estamos digitalizando a nossa cidade! <br />
+            Vá além da presença física e seja encontrado por quem precisa de
+            você.
           </p>
-          <div class="mx-auto mt-5 sm:flex sm:justify-center md:mt-8">
+          <div class="mx-auto sm:flex sm:justify-center lg:mx-0 md:mt-8">
             <div class="rounded-md shadow">
               <a
                 href="#"
-                class="flex gap-2 w-full items-center justify-center rounded-md border border-transparent bg-[#f4a261] px-8 py-3 text-base font-medium text-gray-700 md:py-4 md:px-10 md:text-lg shadow-md shadow-[#f4a261]"
+                class="flex gap-2 w-full items-center justify-center rounded-md border border-transparent bg-[#f4a261] px-8 py-3 text-base font-medium text-gray-700 md:py-4 md:px-10 md:text-lg shadow shadow-[#f4a261]"
                 >Saiba mais
                 <svg
                   width="10"
@@ -125,14 +132,14 @@
               </a>
             </div>
           </div>
-          <img
-            src="/images/header.svg"
-            width="345"
-            height="208"
-            alt=""
-            class="mt-5 w-full"
-          />
         </div>
+        <img
+          src="/images/header.svg"
+          width="345"
+          height="208"
+          alt=""
+          class="min-w-full max-w-full lg:min-w-0 lg:w-[60%] xl:w-[595px] 2xl:w-[724px]"
+        />
       </main>
     </div>
   </div>
