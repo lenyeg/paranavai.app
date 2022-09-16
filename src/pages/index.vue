@@ -3,6 +3,7 @@
     <TheHeader />
     <TheCustomers />
     <TheAboutUs />
+    <TheInformationalVideo />
   </div>
 </template>
 
