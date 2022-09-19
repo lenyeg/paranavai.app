@@ -4,6 +4,7 @@
     <TheCustomers />
     <TheAboutUs />
     <TheInformationalVideo />
+    <ThePrice />
   </div>
 </template>
 
@@ -57,12 +58,16 @@ useHead({
 </script>
 
 <style lang="postcss" module>
+::selection {
+  color: #0d806e;
+  background: #f7be90;
+}
 :root {
   scroll-behavior: smooth;
+  font-family: Poppins, sans-serif;
 }
 .main {
   background: linear-gradient(0deg, rgba(182, 217, 212, 0) 0%, #cfe6e2 100%);
-  font-family: Poppins, sans-serif;
 
   h1 {
     @apply text-3xl font-black text-[#374151];

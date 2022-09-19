@@ -158,7 +158,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline/index.js'
 
 const navigation = [
   { name: 'Quem somos', href: '/#about-us' },
-  { name: 'Preço', href: '#' },
+  { name: 'Preço', href: '/#price' },
   { name: 'Perguntas frequentes', href: '#' },
 ]
 </script>
