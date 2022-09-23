@@ -29,6 +29,27 @@ useHead({
       content:
         'Estamos digitalizando a nossa cidade, vá além da presença física e seja encontrado por quem precisa de você.',
     },
+    {
+      name: 'og:type',
+      content: 'website',
+    },
+    {
+      name: 'og:url',
+      content: 'https://paranavai.app/',
+    },
+    {
+      name: 'og:title',
+      content: 'Paranavaí.app',
+    },
+    {
+      name: 'og:description',
+      content:
+        'Estamos digitalizando a nossa cidade, vá além da presença física e seja encontrado por quem precisa de você.',
+    },
+    {
+      name: 'og:image',
+      content: 'https://paranavai.app/images/social/startup-digital.png',
+    },
   ],
   link: [
     {
