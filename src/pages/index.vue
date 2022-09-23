@@ -50,6 +50,27 @@ useHead({
       name: 'og:image',
       content: 'https://paranavai.app/images/social/startup-digital.png',
     },
+    {
+      name: 'twitter:card',
+      content: 'summary_large_image',
+    },
+    {
+      name: 'twitter:url',
+      content: 'https://paranavai.app/',
+    },
+    {
+      name: 'twitter:title',
+      content: 'Paranavaí.app',
+    },
+    {
+      name: 'twitter:description',
+      content:
+        'Estamos digitalizando a nossa cidade, vá além da presença física e seja encontrado por quem precisa de você.',
+    },
+    {
+      name: 'twitter:image',
+      content: 'https://paranavai.app/images/social/startup-digital.png',
+    },
   ],
   link: [
     {
