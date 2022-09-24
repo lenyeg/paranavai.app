@@ -18,4 +18,10 @@ export default defineNuxtConfig({
       gaHost: GA_HOST,
     },
   },
+
+  vue: {
+    compilerOptions: {
+      isCustomElement: (tag) => ['lottie-player'].includes(tag),
+    },
+  },
 })
