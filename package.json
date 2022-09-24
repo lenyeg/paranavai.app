@@ -47,6 +47,7 @@
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.1",
-    "@heroicons/vue": "^2.0.11"
+    "@heroicons/vue": "^2.0.11",
+    "@lottiefiles/lottie-player": "^1.5.7"
   }
 }

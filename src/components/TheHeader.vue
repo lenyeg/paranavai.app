@@ -1,30 +1,30 @@
 <template>
-  <div class="relative container mx-auto">
+  <div class="container relative mx-auto">
     <div class="relative pt-6 sm:pb-24">
       <Popover>
-        <div class="mx-auto px-4 sm:px-6">
+        <div class="px-4 mx-auto sm:px-6">
           <nav
             class="relative flex items-center justify-between sm:h-10 md:justify-center"
             aria-label="Global"
           >
             <div class="flex flex-1 items-between md:inset-y-0 md:left-0">
-              <div class="flex w-full items-center justify-between md:w-auto">
+              <div class="flex items-center justify-between w-full md:w-auto">
                 <a href="#">
                   <span class="sr-only">Paranavai.app</span>
                   <img
-                    class="h-8 w-auto sm:h-10"
+                    class="w-auto h-8 sm:h-10"
                     src="/images/logo.svg"
                     alt=""
                     width="200px"
                     heigth="32px"
                   />
                 </a>
-                <div class="-mr-2 flex items-center md:hidden">
+                <div class="flex items-center -mr-2 md:hidden">
                   <PopoverButton
                     class="inline-flex items-center justify-center rounded-md bg-[#0D806E] p-2 text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#86C0B7]"
                   >
                     <span class="sr-only">Open main menu</span>
-                    <Bars3Icon class="h-6 w-6" aria-hidden="true" />
+                    <Bars3Icon class="w-6 h-6" aria-hidden="true" />
                   </PopoverButton>
                 </div>
               </div>
@@ -43,23 +43,23 @@
 
         <transition
           enter-active-class="duration-150 ease-out"
-          enter-from-class="opacity-0 scale-95"
-          enter-to-class="opacity-100 scale-100"
+          enter-from-class="scale-95 opacity-0"
+          enter-to-class="scale-100 opacity-100"
           leave-active-class="duration-100 ease-in"
-          leave-from-class="opacity-100 scale-100"
-          leave-to-class="opacity-0 scale-95"
+          leave-from-class="scale-100 opacity-100"
+          leave-to-class="scale-95 opacity-0"
         >
           <PopoverPanel
             focus
-            class="absolute inset-x-0 top-0 z-10 origin-top-right transform p-2 transition md:hidden"
+            class="absolute inset-x-0 top-0 z-10 p-2 transition origin-top-right transform md:hidden"
           >
             <div
-              class="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5"
+              class="overflow-hidden bg-white rounded-lg shadow-md ring-1 ring-black ring-opacity-5"
             >
               <div class="flex items-center justify-between px-5 pt-4">
                 <div>
                   <img
-                    class="h-8 w-auto"
+                    class="w-auto h-8"
                     src="/images/logo.svg"
                     alt="Paranavai.app"
                   />
@@ -69,7 +69,7 @@
                     class="inline-flex items-center justify-center rounded-md bg-[#0D806E] p-2 text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#86C0B7]"
                   >
                     <span class="sr-only">Close menu</span>
-                    <XMarkIcon class="h-6 w-6" aria-hidden="true" />
+                    <XMarkIcon class="w-6 h-6" aria-hidden="true" />
                   </PopoverButton>
                 </div>
               </div>
@@ -78,7 +78,7 @@
                   v-for="item in navigation"
                   :key="item.name"
                   :href="item.href"
-                  class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900"
+                  class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:bg-gray-50 hover:text-gray-900"
                   >{{ item.name }}</a
                 >
               </div>
@@ -88,7 +88,7 @@
       </Popover>
 
       <main
-        class="container mx-auto sm:mt-24 flex flex-col justify-center items-center mt-16 px-4 gap-4 lg:flex-row lg:justify-between"
+        class="container flex flex-col items-center justify-center gap-4 px-4 mx-auto mt-16 sm:mt-24 lg:flex-row lg:justify-between"
       >
         <div class="flex flex-col items-center gap-4 lg:items-start">
           <h1
@@ -103,7 +103,7 @@
             >
           </h1>
           <p
-            class="mx-auto mt-3 text-base text-gray-500 text-center sm:text-lg md:mt-5 lg:max-w-md md:text-xl lg:text-start lg:mx-0"
+            class="mx-auto mt-3 text-base text-center text-gray-500 sm:text-lg md:mt-5 lg:max-w-md md:text-xl lg:text-start lg:mx-0"
           >
             Estamos digitalizando a nossa cidade! <br />
             Vá além da presença física e seja encontrado por quem precisa de
@@ -133,13 +133,17 @@
             </div>
           </div>
         </div>
-        <img
-          src="/images/header.svg"
-          width="345"
-          height="208"
-          alt=""
+        <div
           class="min-w-full max-w-full lg:min-w-0 lg:w-[60%] xl:w-[595px] 2xl:w-[724px]"
-        />
+        >
+          <lottie-player
+            autoplay
+            loop
+            src="/lotties/search-find-increase.json"
+            speed="1"
+            debug
+          />
+        </div>
       </main>
     </div>
   </div>
