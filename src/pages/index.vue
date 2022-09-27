@@ -5,6 +5,8 @@
     <TheAboutUs />
     <TheInformationalVideo />
     <ThePrice />
+    <TheFaq />
+    <TheFooter />
   </div>
 </template>
 
