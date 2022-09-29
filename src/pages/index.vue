@@ -103,17 +103,17 @@ useHead({
 
 <style lang="postcss" module>
 ::selection {
-  color: #0d806e;
-  background: #f7be90;
+  color: white;
+  background: #f4a261;
 }
 :root {
   scroll-behavior: smooth;
   font-family: Poppins, sans-serif;
 }
 .main {
-  background: linear-gradient(0deg, rgba(182, 217, 212, 0) 0%, #cfe6e2 100%);
+  background-color: #fff;
 
-  h1 {
+  #cfe6e2 h1 {
     @apply text-3xl font-black text-[#374151];
   }
 }

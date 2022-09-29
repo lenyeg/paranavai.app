@@ -1,6 +1,6 @@
 <template>
-  <div class="container relative mx-auto">
-    <div class="relative pt-6 sm:pb-24">
+  <section class="relative">
+    <div class="relative pt-6 sm:pb-24 container mx-auto">
       <Popover>
         <div class="px-4 mx-auto sm:px-6">
           <nav
@@ -113,7 +113,7 @@
             <div class="rounded-md shadow">
               <a
                 href="/#about-us"
-                class="flex gap-2 w-full items-center justify-center rounded-md border border-transparent bg-[#f4a261] px-8 py-3 text-base font-medium text-gray-700 md:py-4 md:px-10 md:text-lg shadow shadow-[#f4a261]"
+                class="flex gap-2 w-full items-center justify-center rounded-md bg-[#f4a261] duration-300 px-8 py-3 text-base font-medium text-gray-700 md:py-4 md:px-10 md:text-lg shadow shadow-[#f4a261] hover:bg-gradient-to-r from-[#f4a261] to-[#E76F51]"
                 >Saiba mais
                 <svg
                   width="10"
@@ -146,7 +146,7 @@
         </div>
       </main>
     </div>
-  </div>
+  </section>
 </template>
 
 <script lang="ts">
@@ -166,3 +166,9 @@ const navigation = [
   { name: 'Perguntas frequentes', href: '/#faq' },
 ]
 </script>
+
+<style scoped>
+section {
+  background: linear-gradient(180deg, #cfe6e2 0%, #fff 100%);
+}
+</style>
