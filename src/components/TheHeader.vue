@@ -112,7 +112,7 @@
           <div class="mx-auto sm:flex sm:justify-center lg:mx-0 md:mt-8">
             <div class="rounded-md shadow">
               <a
-                href="#"
+                href="/#about-us"
                 class="flex gap-2 w-full items-center justify-center rounded-md border border-transparent bg-[#f4a261] px-8 py-3 text-base font-medium text-gray-700 md:py-4 md:px-10 md:text-lg shadow shadow-[#f4a261]"
                 >Saiba mais
                 <svg
