@@ -3,11 +3,19 @@
     <section class="container mx-auto">
       <div class="flex justify-between px-4 lg:flex-row-reverse">
         <div class="flex flex-col gap-6 lg:flex-row">
-          <a href="/#about-us" class="hover:text-[#f4a261] duration-300"
+          <a
+            href="/#about-us"
+            class="relative font-medium text-white before:content-[''] before:absolute before:bottom-0 before:w-full before:origin-center before:scale-x-0 before:hover:scale-x-100 before:h-[2px] before:bg-[#F4A261] hover:before: before:duration-300"
             >Quem somos</a
           >
-          <a href="/#price" class="hover:text-[#f4a261] duration-300">Preço</a>
-          <a href="/#faq" class="hover:text-[#f4a261] duration-300"
+          <a
+            href="/#price"
+            class="relative font-medium text-white before:content-[''] before:absolute before:bottom-0 before:w-full before:origin-center before:scale-x-0 before:hover:scale-x-100 before:h-[2px] before:bg-[#F4A261] hover:before: before:duration-300"
+            >Preço</a
+          >
+          <a
+            href="/#faq"
+            class="relative font-medium text-white before:content-[''] before:absolute before:bottom-0 before:w-full before:origin-center before:scale-x-0 before:hover:scale-x-100 before:h-[2px] before:bg-[#F4A261] hover:before: before:duration-300"
             >Perguntas frequentes</a
           >
         </div>

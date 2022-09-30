@@ -88,7 +88,7 @@
         <a
           href="https://api.whatsapp.com/send?phone=5544920018161&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20maximizar%20os%20resultados%20do%20meu%20neg%C3%B3cio!"
           target="_blank"
-          class="flex justify-center items-center gap-4 py-4 px-6 w-[387px] max-w-[95%] bg-[#F4A261] rounded-md text-center shadow font-semibold shadow-[#F4A261]"
+          class="flex gap-2 items-center justify-center rounded-md bg-[#f4a261] duration-300 px-8 py-3 text-base font-medium text-gray-700 md:py-4 md:px-10 md:text-lg shadow shadow-[#f4a261] hover:bg-gradient-to-r from-[#f4a261] to-[#E76F51] w-[387px] max-w-[95%]"
           >Quero resultado máximo!
           <svg
             width="21"
