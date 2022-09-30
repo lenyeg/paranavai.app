@@ -20,7 +20,7 @@
           >
         </div>
         <div class="flex flex-col gap-3 lg:flex-row lg:gap-6">
-          <a href="https://www.facebook.com/paranavai.app/" target="_blank"
+          <a href="https://www.facebook.com/paranavaiapp/" target="_blank"
             ><svg
               width="32"
               height="33"
