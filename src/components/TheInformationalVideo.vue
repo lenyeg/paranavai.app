@@ -18,7 +18,7 @@
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 65 65"
-          class="w-16 h-16"
+          class="w-16 h-16 group cursor-pointer"
         >
           <rect
             width="64"
@@ -27,6 +27,7 @@
             y=".849"
             fill="#9CA3AF"
             rx="32"
+            class="group-hover:fill-white duration-300"
           />
           <path fill="#1F2937" d="m48.5 32.849-24 13.856V18.993l24 13.856Z" />
         </svg>
