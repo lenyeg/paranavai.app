@@ -1,6 +1,6 @@
 <template>
   <section class="relative">
-    <div class="relative pt-6 sm:pb-24 container mx-auto">
+    <div class="container relative pt-6 mx-auto sm:pb-24">
       <Popover>
         <div class="px-4 mx-auto sm:px-6">
           <nav
@@ -15,9 +15,9 @@
                     class="w-auto h-8 sm:h-10"
                     src="/images/logo.svg"
                     alt=""
-                    width="200px"
-                    heigth="32px"
-                  />
+                    width="200"
+                    heigth="32"
+                  >
                 </a>
                 <div class="flex items-center -mr-2 md:hidden">
                   <PopoverButton
@@ -35,8 +35,7 @@
                 :key="item.name"
                 :href="item.href"
                 class="relative font-medium text-gray-700 before:content-[''] before:absolute before:bottom-0 before:w-full before:origin-center before:scale-x-0 before:hover:scale-x-100 before:h-[2px] before:bg-[#F4A261] hover:before: before:duration-300"
-                >{{ item.name }}</a
-              >
+              >{{ item.name }}</a>
             </div>
           </nav>
         </div>
@@ -62,7 +61,7 @@
                     class="w-auto h-8"
                     src="/images/logo.svg"
                     alt="Paranavai.app"
-                  />
+                  >
                 </div>
                 <div class="-mr-2">
                   <PopoverButton
@@ -79,8 +78,7 @@
                   :key="item.name"
                   :href="item.href"
                   class="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:bg-gray-50 hover:text-gray-900"
-                  >{{ item.name }}</a
-                >
+                >{{ item.name }}</a>
               </div>
             </div>
           </PopoverPanel>
@@ -94,18 +92,14 @@
           <h1
             class="flex flex-col items-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:items-start lg:max-w-[50%] xl:max-w-[595px]"
           >
-            <span class="block lg:text-start lg:text-5xl"
-              >O mundo evoluiu,</span
-            >
+            <span class="block lg:text-start lg:text-5xl">O mundo evoluiu,</span>
             {{ ' ' }}
-            <span class="block lg:text-start lg:text-5xl"
-              >é a vez de Paranavaí.</span
-            >
+            <span class="block lg:text-start lg:text-5xl">é a vez de Paranavaí.</span>
           </h1>
           <p
             class="mx-auto mt-3 text-base text-center text-gray-500 sm:text-lg md:mt-5 lg:max-w-md md:text-xl lg:text-start lg:mx-0"
           >
-            Estamos digitalizando a nossa cidade! <br />
+            Estamos digitalizando a nossa cidade! <br>
             Vá além da presença física e seja encontrado por quem precisa de
             você.
           </p>
@@ -114,21 +108,9 @@
               <a
                 href="/#about-us"
                 class="flex gap-2 w-full items-center justify-center rounded-md bg-[#f4a261] duration-300 px-8 py-3 text-base font-medium text-gray-700 md:py-4 md:px-10 md:text-lg shadow shadow-[#f4a261] hover:bg-gradient-to-r from-[#f4a261] to-[#E76F51]"
-                >Saiba mais
-                <svg
-                  width="10"
-                  height="20"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m9 15-4 4m0 0-4-4m4 4V1"
-                    stroke="#3A3A3C"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
+              >
+                <span>Saiba mais</span>
+                <BaseIcon icon="arrow-down" />
               </a>
             </div>
           </div>
@@ -136,13 +118,12 @@
         <div
           class="min-w-full max-w-full lg:min-w-0 lg:w-[60%] xl:w-[595px] 2xl:w-[724px]"
         >
-          <lottie-player
-            autoplay
-            loop
-            src="/lotties/search-find-increase.json"
-            speed="1"
-            debug
-          />
+          <img
+            src="/images/header.svg"
+            width="345"
+            height="208"
+            alt=""
+          >
         </div>
       </main>
     </div>
@@ -151,14 +132,15 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-export default defineComponent({
-  name: 'TheHeader',
-})
 </script>
 
 <script lang="ts" setup>
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline/index.js'
+
+defineComponent({
+  name: 'TheHeader',
+})
 
 const navigation = [
   { name: 'Quem somos', href: '/#about-us' },
