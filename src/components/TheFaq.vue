@@ -1,9 +1,9 @@
 <template>
   <div id="faq" class="bg-gray-100">
-    <div class="container mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
+    <div class="container px-4 py-12 mx-auto sm:py-16 sm:px-6 lg:px-8">
       <div class="mx-auto divide-y-2 divide-gray-200">
         <h2
-          class="text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+          class="text-3xl font-bold tracking-tight text-center text-gray-900 sm:text-4xl"
         >
           Perguntas Frequentes
         </h2>
@@ -17,12 +17,12 @@
           >
             <dt class="text-lg">
               <DisclosureButton
-                class="flex w-full items-center justify-between text-left text-gray-400"
+                class="flex items-center justify-between w-full text-left text-gray-400"
               >
                 <span class="font-medium text-gray-900">{{
                   faq.question
                 }}</span>
-                <span class="ml-6 flex h-7 items-center">
+                <span class="flex items-center ml-6 h-7">
                   <PlusCircleIcon
                     :class="[
                       open ? 'hidden' : 'block',
@@ -40,11 +40,11 @@
                 </span>
               </DisclosureButton>
             </dt>
-            <DisclosurePanel as="dd" class="mt-2 pr-12">
+            <DisclosurePanel as="dd" class="pr-12 mt-2">
               <p
                 v-for="answer in faq.answers"
                 :key="answer"
-                class="text-base text-gray-500 py-2"
+                class="py-2 text-base text-gray-500"
               >
                 {{ answer }}
               </p>
