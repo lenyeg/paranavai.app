@@ -120,8 +120,8 @@
         >
           <img
             src="/images/header.svg"
-            width="345"
-            height="208"
+            width="468"
+            height="360"
             alt=""
           >
         </div>
