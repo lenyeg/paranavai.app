@@ -1,5 +1,6 @@
 <template>
-  <section id="price" class="container p-4 m-auto my-8 text-gray-700">
+  <BaseContainer>
+    <section id="price" class="my-8 text-gray-700">
     <h2 class="text-2xl text-center lg:text-5xl">
       <strong>Investimento mínimo, resultado máximo</strong>
     </h2>
@@ -101,6 +102,7 @@
       </article>
     </section>
   </section>
+  </BaseContainer>
 </template>
 
 <script lang="ts">

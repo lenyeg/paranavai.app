@@ -1,7 +1,8 @@
 <template>
-  <div
+  <BaseContainer>
+    <div
     id="about-us"
-    class="container flex flex-col items-center justify-center gap-12 px-4 mx-auto my-8 text-gray-500"
+    class="flex flex-col items-center justify-center gap-12 my-8 text-gray-500"
   >
     <section
       class="flex flex-col items-center w-11/12 gap-2 text-center lg:w-full lg:flex-row lg:text-right"
@@ -63,6 +64,8 @@
       </article>
     </section>
   </div>
+  </BaseContainer>
+
 </template>
 
 <script lang="ts">

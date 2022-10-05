@@ -1,6 +1,7 @@
 <template>
   <section class="relative">
-    <div class="container relative pt-6 mx-auto sm:pb-24">
+    <BaseContainer>
+      <div class="relative pt-6 sm:pb-24">
       <Popover>
         <div class="px-4 mx-auto sm:px-6">
           <nav
@@ -127,6 +128,7 @@
         </div>
       </main>
     </div>
+    </BaseContainer>
   </section>
 </template>
 

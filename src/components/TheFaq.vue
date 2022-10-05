@@ -1,6 +1,7 @@
 <template>
   <div id="faq" class="bg-gray-100">
-    <div class="container px-4 py-12 mx-auto sm:py-16 sm:px-6 lg:px-8">
+    <BaseContainer >
+      <div class="sm:py-16">
       <div class="mx-auto divide-y-2 divide-gray-200">
         <h2
           class="text-3xl font-bold tracking-tight text-center text-gray-900 sm:text-4xl"
@@ -53,6 +54,7 @@
         </dl>
       </div>
     </div>
+    </BaseContainer>
   </div>
 </template>
 

@@ -2,8 +2,9 @@
   <section
     class="bg-[#374151] bg-[url(/icons/outline-logo.svg)] bg-[length:40px_40px] bg-repeat-space py-16 px-4"
   >
+  <BaseContainer>
     <article
-      class="container flex flex-col items-center justify-center gap-2 mx-auto"
+      class="flex flex-col items-center justify-center gap-2"
     >
       <p class="font-medium text-gray-300 uppercase">
         Startup digital
@@ -42,6 +43,7 @@
         <BaseIcon icon="whatsapp" />
       </a>
     </article>
+  </BaseContainer>
   </section>
 </template>
 

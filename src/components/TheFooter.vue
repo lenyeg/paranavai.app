@@ -1,6 +1,6 @@
 <template>
   <footer class="py-4 text-white bg-gray-700 lg:pt-20">
-    <section class="container px-4 mx-auto">
+    <BaseContainer>
       <div class="flex justify-between lg:flex-row-reverse">
         <div class="flex flex-col gap-6 lg:flex-row">
           <a
@@ -49,6 +49,6 @@
       <p class="text-center lg:my-4 lg:mt-8">
         Feito com 💚 e ☕️ pela Lenyeg
       </p>
-    </section>
+    </BaseContainer>
   </footer>
 </template>
