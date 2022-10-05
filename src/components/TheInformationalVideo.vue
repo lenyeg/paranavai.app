@@ -12,8 +12,9 @@
       <p class="text-2xl font-bold text-center text-gray-300">
         Nossa motivação e proposta
       </p>
-      <div
-        class="w-[343px] h-[603px] lg:w-[739px] lg:h-[422px] rounded-md bg-[#1F2937] flex justify-center items-center mt-9"
+      <iframe
+        class="w-[343px] h-[603px] lg:w-[739px] lg:h-[422px] rounded-md aspect-video"
+        src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +33,7 @@
           />
           <path fill="#1F2937" d="m48.5 32.849-24 13.856V18.993l24 13.856Z" />
         </svg>
-      </div>
+      </iframe>
       <a
         href="https://api.whatsapp.com/send?phone=5544920018161&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20maximizar%20os%20resultados%20do%20meu%20neg%C3%B3cio!"
         target="_blank"
