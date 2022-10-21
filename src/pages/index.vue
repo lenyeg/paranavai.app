@@ -3,7 +3,7 @@
     <TheHeader />
     <TheCustomers />
     <TheAboutUs />
-    <TheInformationalVideo />
+    <!-- <TheInformationalVideo /> -->
     <ThePrice />
     <TheFaq />
     <TheFooter />
@@ -19,12 +19,9 @@ export default defineComponent({
 </script>
 
 <script lang="ts" setup>
+
 useHead({
-  title: 'Paranavaí.app',
-  // or, instead:
-  // titleTemplate: (title) => `My App - ${title}`,
-  viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
-  charset: 'utf-8',
+  title: 'Paranavaí.app - Seja encontrado por quem precisa de você',
   meta: [
     {
       name: 'description',
@@ -87,17 +84,17 @@ useHead({
     {
       rel: 'preconnect',
       href: 'https://fonts.gstatic.com',
-      crossorigin: true,
+      crossorigin: 'anonymous',
     },
     {
       rel: 'stylesheet',
       href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&family=Sree+Krushnadevaraya&display=swap',
-      crossorigin: true,
+      crossorigin: 'anonymous',
     },
   ],
   bodyAttrs: {
     class: 'font-poppins',
-  },
+  }
 })
 </script>
 

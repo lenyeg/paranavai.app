@@ -1,59 +1,59 @@
 <template>
   <div id="faq" class="bg-gray-100">
-    <BaseContainer >
+    <BaseContainer>
       <div class="sm:py-16">
-      <div class="mx-auto divide-y-2 divide-gray-200">
-        <h2
-          class="text-3xl font-bold tracking-tight text-center text-gray-900 sm:text-4xl"
-        >
-          Perguntas Frequentes
-        </h2>
-        <dl class="mt-6 space-y-6 divide-y divide-gray-200">
-          <Disclosure
-            v-for="faq in faqs"
-            :key="faq.question"
-            v-slot="{ open }"
-            as="div"
-            class="pt-6"
+        <div class="mx-auto divide-y-2 divide-gray-200">
+          <h2
+            class="text-3xl font-bold tracking-tight text-center text-gray-900 sm:text-4xl"
           >
-            <dt class="text-lg">
-              <DisclosureButton
-                class="flex items-center justify-between w-full text-left text-gray-400"
-              >
-                <span class="font-medium text-gray-900">{{
-                  faq.question
-                }}</span>
-                <span class="flex items-center ml-6 h-7">
-                  <PlusCircleIcon
-                    :class="[
-                      open ? 'hidden' : 'block',
-                      'h-6 w-6 transform text-gray-900',
-                    ]"
-                    aria-hidden="true"
-                  />
-                  <MinusCircleIcon
-                    :class="[
-                      open ? 'block' : 'hidden',
-                      'h-6 w-6 transform text-gray-900',
-                    ]"
-                    aria-hidden="true"
-                  />
-                </span>
-              </DisclosureButton>
-            </dt>
-            <DisclosurePanel as="dd" class="pr-12 mt-2">
-              <p
-                v-for="answer in faq.answers"
-                :key="answer"
-                class="py-2 text-base text-gray-500"
-              >
-                {{ answer }}
-              </p>
-            </DisclosurePanel>
-          </Disclosure>
-        </dl>
+            Perguntas Frequentes
+          </h2>
+          <dl class="mt-6 space-y-6 divide-y divide-gray-200">
+            <Disclosure
+              v-for="faq in faqs"
+              :key="faq.question"
+              v-slot="{ open }"
+              as="div"
+              class="pt-6"
+            >
+              <dt class="text-lg">
+                <DisclosureButton
+                  class="flex items-center justify-between w-full text-left text-gray-400"
+                >
+                  <span class="font-medium text-gray-900">{{
+                    faq.question
+                  }}</span>
+                  <span class="flex items-center ml-6 h-7">
+                    <PlusCircleIcon
+                      :class="[
+                        open ? 'hidden' : 'block',
+                        'h-6 w-6 transform text-gray-900',
+                      ]"
+                      aria-hidden="true"
+                    />
+                    <MinusCircleIcon
+                      :class="[
+                        open ? 'block' : 'hidden',
+                        'h-6 w-6 transform text-gray-900',
+                      ]"
+                      aria-hidden="true"
+                    />
+                  </span>
+                </DisclosureButton>
+              </dt>
+              <DisclosurePanel as="dd" class="pr-12 mt-2">
+                <p
+                  v-for="answer in faq.answers"
+                  :key="answer"
+                  class="py-2 text-base text-gray-500"
+                >
+                  {{ answer }}
+                </p>
+              </DisclosurePanel>
+            </Disclosure>
+          </dl>
+        </div>
       </div>
-    </div>
     </BaseContainer>
   </div>
 </template>

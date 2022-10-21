@@ -11,6 +11,13 @@ export default defineNuxtConfig({
     transpile: ['@headlessui/vue'],
   },
 
+  app: {
+    head: {
+      viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
+      charset: 'utf-8',
+    },
+  },
+
   runtimeConfig: {
     public: {
       apiBaseUrl: API_BASE_URL,
@@ -24,4 +31,8 @@ export default defineNuxtConfig({
       // isCustomElement: (tag) => ['lottie-player'].includes(tag),
     },
   },
+
+  tailwindcss: {
+    configPath: '../tailwind.config.js'
+  }
 })

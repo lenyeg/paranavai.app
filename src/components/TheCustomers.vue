@@ -1,5 +1,5 @@
 <template>
-  <BaseContainer >
+  <BaseContainer>
     <div
       class="flex flex-col items-center justify-center py-8 m-auto text-gray-800"
     >
@@ -19,7 +19,6 @@
       </div>
     </div>
   </BaseContainer>
-
 </template>
 
 <script lang="ts" setup>

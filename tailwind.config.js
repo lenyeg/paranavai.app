@@ -56,6 +56,19 @@ module.exports = {
           900: '#2A0E0A',
         },
       },
+      boxShadow: {
+        'orange-spring': '0px 3px 4px rgba(244, 162, 97, 0.3);'
+      },
+      backgroundImage: {
+        'orange-spring': 'linear-gradient(270deg, rgba(231,111,81,1) 0%, rgba(244,162,97,1) 20%, rgba(233,196,106,1) 35%, rgba(233,196,106,1) 50%, rgba(244,162,97,1) 50%, rgba(244,162,97,1) 100%)',
+      },
+      backgroundSize: {
+        'size-200': '200% 200%',
+      },
+      backgroundPosition: {
+        'pos-0': '0% 0%',
+        'pos-100': '100% 100%',
+      },
     },
   },
   content: [
