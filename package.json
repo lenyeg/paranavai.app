@@ -45,6 +45,7 @@
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.1",
-    "@heroicons/vue": "^2.0.11"
+    "@heroicons/vue": "^2.0.11",
+    "vue-lite-youtube-embed": "^1.0.4"
   }
 }

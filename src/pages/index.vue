@@ -3,7 +3,7 @@
     <TheHeader />
     <TheCustomers />
     <TheAboutUs />
-    <!-- <TheInformationalVideo /> -->
+    <TheInformationalVideo />
     <ThePrice />
     <TheFaq />
     <TheFooter />
