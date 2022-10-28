@@ -1,7 +1,7 @@
 <template>
   <div :class="$style.main">
     <TheHeader />
-    <TheCustomers />
+    <!-- <TheCustomers /> -->
     <TheAboutUs />
     <TheInformationalVideo />
     <ThePrice />
