@@ -1,18 +1,18 @@
 <template>
   <BaseContainer>
-    <section id="price" class="my-8 text-gray-700">
+    <section id="price" class="px-4 py-16 text-gray-700">
       <h2 class="text-2xl text-center lg:text-5xl">
-        <strong>Investimento mínimo, resultado máximo</strong>
+        <strong>Investimento mínimo, resultado máximo.</strong>
       </h2>
       <section class="flex flex-col gap-4 mt-4 lg:gap-16 lg:flex-row">
         <article class="flex flex-col gap-4 mt-4 xl:w-1/2">
           <blockquote
             class="bg-gray-100 text-gray-500 p-4 border-l border-solid border-[#F4A261] text-center lg:text-2xl lg:text-start"
           >
-            <i>“Eu não aguento mais não encontrar as empresas de Paranavaí no
+            "<i>Eu não aguento mais não encontrar as empresas de Paranavaí no
               Google. E às vezes em que encontro, as informações estão
-              desatualizadas.”</i>😪
-            <span class="block text-gray-700">- Uma história baseada em fatos reais.</span>
+              desatualizadas.</i> 😪"
+            <span class="block mt-1 text-gray-700">- Uma história baseada em fatos reais.</span>
           </blockquote>
           <section
             class="flex flex-col items-center justify-between gap-4 text-center lg:text-start lg:text-2xl lg:items-start"

@@ -21,7 +21,7 @@ export default defineComponent({
 <script lang="ts" setup>
 
 useHead({
-  title: 'Paranavaí.app - Seja encontrado por quem precisa de você',
+  title: 'Seja encontrado por quem precisa de você - Paranavaí.app',
   meta: [
     {
       name: 'description',
@@ -38,7 +38,7 @@ useHead({
     },
     {
       name: 'og:title',
-      content: 'Paranavaí.app',
+      content: 'Seja encontrado por quem precisa de você - Paranavaí.app',
     },
     {
       name: 'og:description',
@@ -59,7 +59,7 @@ useHead({
     },
     {
       name: 'twitter:title',
-      content: 'Paranavaí.app',
+      content: 'Seja encontrado por quem precisa de você - Paranavaí.app',
     },
     {
       name: 'twitter:description',
@@ -88,7 +88,7 @@ useHead({
     },
     {
       rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&family=Sree+Krushnadevaraya&display=swap',
+      href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap',
       crossorigin: 'anonymous',
     },
   ],

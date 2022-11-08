@@ -1,19 +1,19 @@
 <template>
-  <footer class="py-4 text-white bg-gray-700 lg:pt-20">
+  <footer class="pt-16 pb-8 text-white bg-gray-700 lg:pt-20">
     <BaseContainer>
       <div class="flex justify-between lg:flex-row-reverse">
         <div class="flex flex-col gap-6 lg:flex-row">
           <a
             href="/#about-us"
-            class="relative font-medium text-white before:content-[''] before:absolute before:bottom-0 before:w-full before:origin-center before:scale-x-0 before:hover:scale-x-100 before:h-[2px] before:bg-[#F4A261] hover:before: before:duration-300"
+            class="relative flex font-medium text-white transition-colors hover:text-[#F4A261]"
           >Quem somos</a>
           <a
             href="/#price"
-            class="relative font-medium text-white before:content-[''] before:absolute before:bottom-0 before:w-full before:origin-center before:scale-x-0 before:hover:scale-x-100 before:h-[2px] before:bg-[#F4A261] hover:before: before:duration-300"
+            class="relative flex w-auto font-medium text-white transition-colors hover:text-[#F4A261]"
           >Preço</a>
           <a
             href="/#faq"
-            class="relative font-medium text-white before:content-[''] before:absolute before:bottom-0 before:w-full before:origin-center before:scale-x-0 before:hover:scale-x-100 before:h-[2px] before:bg-[#F4A261] hover:before: before:duration-300"
+            class="relative flex w-auto font-medium text-white transition-colors hover:text-[#F4A261]"
           >Perguntas frequentes</a>
         </div>
         <div class="flex flex-col gap-3 lg:flex-row lg:gap-6">
@@ -36,7 +36,7 @@
         </div>
       </div>
       <div
-        class="flex flex-col items-center justify-center w-10/12 pb-8 m-auto my-4 text-center border-b-2 border-gray-800 border-solid lg:flex-row lg:justify-between lg:w-full"
+        class="flex flex-col items-center justify-center pb-8 m-auto my-8 text-center border-b-2 border-gray-800 border-solid lg:flex-row lg:justify-between lg:w-full"
       >
         <div class="my-4 text-center text-gray-200 lg:text-start">
           <p>2022 &copy; Lenyeg Ltda. Todos os direitos reservados.</p>
@@ -47,7 +47,7 @@
         </a>
       </div>
       <p class="text-center lg:my-4 lg:mt-8">
-        Feito com 💚 e ☕️ pela Lenyeg
+        Feito com 💚 e ☕️ pela <a href="https://lenyeg.academy" class="transition-all hover:underline decoration-green-500 underline-offset-2">Lenyeg</a>
       </p>
     </BaseContainer>
   </footer>

@@ -1,7 +1,7 @@
 <template>
   <section class="relative backgorund">
     <BaseContainer>
-      <div class="relative pt-6 sm:pb-24">
+      <div class="relative py-6">
         <Popover>
           <div class="px-4 mx-auto sm:px-6">
             <nav
@@ -88,18 +88,16 @@
 
         <BaseContainer>
           <section
-            class="flex flex-col items-center justify-center gap-4 mt-16 sm:mt-24 lg:flex-row lg:justify-between"
+            class="flex flex-col justify-center gap-8 mt-16 sm:mt-24 lg:flex-row lg:justify-between"
           >
             <div class="flex flex-col items-center flex-1 gap-6 lg:items-start">
               <h1
-                class="flex flex-col items-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:items-start"
+                class="flex text-5xl font-black -tracking-[0.03em] text-center text-gray-700 lg:text-4xl xl:text-5xl lg:text-left"
               >
-                <span class="block lg:text-start lg:text-5xl">O mundo evoluiu,</span>
-                {{ ' ' }}
-                <span class="block lg:text-start lg:text-5xl">é a vez de Paranavaí.</span>
+                O mundo evoluiu,<br>é a vez de Paranavaí.
               </h1>
               <p
-                class="mx-auto text-base text-center text-gray-500 sm:text-lg md:text-xl lg:text-start lg:mx-0"
+                class="mx-auto text-base text-center max-w-[35ch] text-gray-500 sm:text-lg md:text-xl lg:text-start lg:mx-0"
               >
                 Estamos digitalizando a nossa cidade! <br>
                 Vá além da presença física e seja encontrado por quem precisa de
@@ -119,7 +117,7 @@
                 width="468"
                 height="360"
                 alt=""
-                class="object-cover w-full"
+                class="object-cover w-full h-auto"
               >
             </div>
           </section>
