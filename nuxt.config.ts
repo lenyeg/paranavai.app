@@ -7,6 +7,16 @@ export default defineNuxtConfig({
   rootDir: './src/',
   target: 'static',
   modules: ['@nuxtjs/tailwindcss'],
+  build: {
+    transpile: ['@headlessui/vue'],
+  },
+
+  app: {
+    head: {
+      viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
+      charset: 'utf-8',
+    },
+  },
 
   runtimeConfig: {
     public: {
@@ -15,4 +25,14 @@ export default defineNuxtConfig({
       gaHost: GA_HOST,
     },
   },
+
+  vue: {
+    compilerOptions: {
+      // isCustomElement: (tag) => ['lottie-player'].includes(tag),
+    },
+  },
+
+  tailwindcss: {
+    configPath: '../tailwind.config.js'
+  }
 })

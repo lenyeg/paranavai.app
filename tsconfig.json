@@ -1,4 +1,7 @@
 {
   // https://v3.nuxtjs.org/concepts/typescript
-  "extends": "./src/.nuxt/tsconfig.json"
+  "extends": "./src/.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "jsx": "preserve"
+  }
 }
