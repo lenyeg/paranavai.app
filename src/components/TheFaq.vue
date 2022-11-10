@@ -37,7 +37,7 @@
                   :key="answer"
                   class="py-2 text-base text-gray-500"
                 >
-                  • {{ answer }}
+                  {{ answer }}
                 </p>
               </DisclosurePanel>
             </Disclosure>
@@ -57,75 +57,78 @@ import {
 
 const faqs = [
   {
-    question: 'Quais são os serviços prestados pela empresa?',
+    question: 'O que é o Startup Digital?',
     answers: [
-      'A Paranavaí.app oferece serviço de responsabilização pelo seu Google Business, ajudando o empreendimento a crescer e ser alcançado pela população local, fazendo sua empresa ser encontrada digitalmente;',
+      'O projeto Startup Digital consiste em consolidar a prenseça digital das empresas de Paranavaí através da responsabilização pelo perfis delas no Google fazendo-as serem encontradas digitalmente.',
 
-      'Coleta de dados da empresa necessários para atualização do perfil dentro do google;',
+      'Ainda assim, você terá acesso à um gerente de conta que acompanhará o posicionamento digital da sua empresa e manterá seus dados atualizados, e uma página de links customizado para ajudar na centralização das suas informações e divulgação do seu negócio.',
 
-      'Atualizações de informações sob demanda;',
-
-      'Caso a empresa não tenha uma página online própria com domínio próprio podemos fornecer a criação (facebook/instagram) para iniciar o negócio digitalmente.',
-
-      'Será desenvolvido uma página de links para que qualquer visitante possa acessar todas as informações da empresa e consiga entrar em contato com ela. (Podendo ser utilizado na bio do instagram e até impulsionar)',
-
-      'Anúncios dentro da página Paranavaí.app onde quem pegou o plano anual o valor pago pode ser revertido para em créditos para serem utilizados em anúncios quando o site for lançado.(Apenas quando o site for lançado)',
-
-      'Às empresas poderão adquirir o serviço de responsabilização pelo seu Google Business ajudando o negócio do empreendedor a crescer e ser alcançado pela população local fazendo sua empresa ser encontrada digitalmente.',
-
-      'Bônus*: (*fale com sua Account Manager)',
-
-      'Créditos para serem utilizados como anúncios dentro do Paranavai.app quando a plataforma for lançada.',
-
-      'Consultoria.',
+      '',
     ],
   },
   {
-    question: 'Quais as vantagens do associado?',
+    question: 'Como funciona o Startup Digital?',
     answers: [
-      'Dentro do pacote de 12 meses da start up digital , você terá acesso à:',
-
-      'um gerente de conta que acompanhará o posicionamento digital da sua empresa e manterá seus dados atualizados',
-
-      'uma página de links customizado para ajudar na centralização das suas informações e divulgação do seu negócio',
-
-      'o investimento no projeto será 100% revertido em créditos para usar como anúncio em nossa plataforma assim que lançarmos.',
-
-      'Consultorias em gestão e tecnologia gratuita. (2 indicações, só indicação que fecha)',
-
-      'Dentro da Plataforma as vantagens serão:',
-
-      'As empresas pagantes aparecerão primeiro na lista na hora que houver demanda dentro do paranavaí.app   (apenas para quando o site for lançado, não colocar por agora).',
-
-      'Avaliar e salvar empresas como favoritas dentro da página  (apenas para quando o site for lançado, não colocar por agora.)',
-
-      'Cadastrar eventos dentro do calendário da página (apenas para quando o site for lançado, não colocar por agora.)',
+      'Após a adesão, o seu gerente de conta terá a missão de entender o seu negócio. Com isso, será criado um perfil no Google para a sua empresa e nós acompanharemos o posicionamento digital da sua empresa e manteremos seus dados atualizados.',
+      'Além disso, ao longo do projeto, forneceremos a você uma página de links customizado para ajudar na centralização das suas informações e divulgação do seu negócio.'
     ],
   },
   {
-    question: 'Como eu me torno um associado?',
+    question: 'O que o gerente da minha conta poderá fazer?',
     answers: [
-      'Assinando o contrato de prestação de serviço de 12 meses no valor 1 + 11 de R$ 49,90 você já se torna um associado da paranavai.app',
-
-      'Para se tornar um associado é super fácil, basta você fazer o seu cadastro no nosso site, escolher qual o plano que mais te agrada, se é o gratuito ou o pago e colocar todas as informações necessárias para o seu cadastro. Nesse aspecto, as empresas não pagantes aguardarão até o lançamento do aplicativo para visualizarem seus dados dentro dele, pois, quando o aplicativo estiver pronto, já teremos empresas para colocar. (lista de espera, será notificado quando estiver no ar) (apenas para quando o site for lançado, não por agora.)',
+      'A pessoa, que irá ser o seu gerente da sua conta conosco, será a sua interface para com a nossa equipe interna que executará as atividades. Afinal, o objetivo, através dele, é mantermos um relacionamento de longo prazo.',
+      'Além das nossas obrigações para com o projeto Startup Digital, você podererá conversar com o seu gerente de conta sobre quaisquer temas relacionados ao seu negócio. Colaboraremos com o que for possível. 🥰'
     ],
   },
   {
-    question: 'Como faço para anunciar minha empresa dentro do paranavai.app?',
+    question: 'Quanto tempo o Startup Digital dura?',
     answers: [
-      'Após realizar o seu cadastro dentro do Paranavai.app ou com nossa start up digital você deverá entrar em contato pelo whatsapp da paranavai.app.( apenas para quando o site for lançado)',
-
-      'Após realizar o pagamento ou a liberação dos créditos você deverá escolher os dias que estarão disponíveis na agenda para fazer o anúncio. ( apenas para quando o site for lançado)',
-
-      'Você deverá adicionar uma imagem para que possamos colocar no Anúncio do tamanho e formado exigido pela plataforma. ( apenas para quando o site for lançado)',
-
-      'O  valor de 1 + 11 de R$ 49,90 será revertido para anúncios dentro da plataforma, assim deverá entrar em contato no nosso whatssapp com sua AM para ver a possibilidade dos valores revertidos.',
+      'O projeto Startup Digital é um serviço que será executado ao longo dos 12 meses de contrato, pois a prioridade dos entregáveis a serem feitas é o contrato mais antigo.',
     ],
   },
   {
-    question: 'Como funciona a forma de pagamento?',
-    answers: ['O pagamento poderá ser via pix ou boleto em 1 + 11 de R$ 49,90'],
+    question: 'O Startup Digital é para mim?',
+    answers: [
+      'Se você tem algum negócio (autônomo ou empresa de qualquer porte), provavelmente sabe da importância das pessoas te encontrarem e saberem o que você oferece.',
+      'Através de um investimento mínimo, nós garantiremos que você será encontrado! Somos especialistas nisso. 😉'
+    ],
   },
-  // More questions...
+  {
+    question: 'Quanto custa a adesão ao Startup Digital?',
+    answers: [
+      'Ao longo dos 12 meses do projeto, você pagará uma mensalidade de R$ 49,90, ou seja, 1 + 11 de R$ 49,90 via Pix ou Boleto.'
+    ],
+  },
+  {
+    question: 'Como faço para aderir ao Startup Digital?',
+    answers: [
+      'Entre em contato conosco que é rapidinho... 🥰'
+    ],
+  },
+  {
+    question: 'Ao final do Startup Digital, vou perder minha página de links?',
+    answers: [
+      'Não, uma vez desenvolvida, o código fonte da página será de código aberto e você poderá fazer o que você quiser com ela.',
+      'Mesmo assim, o nosso projeto posterior é que a sua página de links úteis se torne o perfil da sua empresa dentro do nosso aplicativo.'
+    ],
+  },
+  {
+    question: 'E o que vai além do Startup Digital?',
+    answers: [
+      'Se alguma necessidade da sua empresa vá além do que estamos oferecendo no projeto, entre em contato conosco para saber como podemos colaborar com a digitalização da sua empresa. 🤗',
+    ],
+  },
+  {
+    question: 'Qual o objetivo do Startup Digital?',
+    answers: [
+      'Digitalizar a maior quantidade de empresas, já que nós não aguentamos mais não achá-las em Paranavaí! 😡 E, principalmente, com informações erradas. 🤬',
+    ],
+  },
+  {
+    question: 'Não sou de Paranavaí e quero aderir ao Startup Digital. É possível?',
+    answers: [
+      'Claro! Apesar de estarmos focando nas empresas de nossa cidade, o mundo digital é para todos.',
+    ],
+  },
 ]
 </script>
