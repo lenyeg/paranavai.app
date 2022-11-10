@@ -33,8 +33,9 @@
         <a
           href="https://api.whatsapp.com/send?phone=5544920018161&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20maximizar%20os%20resultados%20do%20meu%20neg%C3%B3cio!"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener"
           class="flex gap-2 w-full items-center justify-center rounded-md border mt-9 max-w-[223px] border-transparent bg-white py-3 text-base font-medium hover:bg-gray-200 ring-4 ring-transparent hover:ring-gray-100/[.50] focus:ring-gray-100/[.50] text-gray-700 md:py-4 md:text-lg shadow transition-all"
+          @click="track"
         >
           <span>Entre em contato</span>
           <BaseIcon icon="whatsapp" />
@@ -49,8 +50,23 @@ import LiteYouTubeEmbed from 'vue-lite-youtube-embed'
 import 'vue-lite-youtube-embed/dist/style.css'
 
 import { defineComponent } from 'vue'
+import { useGtag } from 'vue-gtag-next'
+
 export default defineComponent({
   name: 'TheInformationalVideo',
-  components: { LiteYouTubeEmbed }
+  components: { LiteYouTubeEmbed },
+  setup () {
+    const { event } = useGtag()
+    const track = () => {
+      event('conversion', {
+        send_to: 'AW-10967913163/oDZzCMjn0oEYEMul9O0o',
+      })
+      event('ask_contact')
+    }
+
+    return {
+      track,
+    }
+  },
 })
 </script>

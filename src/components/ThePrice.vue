@@ -82,7 +82,7 @@
             </span>
           </div>
 
-          <BaseButton icon="increase" :narrow="true" target="_blank" href="/https://api.whatsapp.com/send?phone=5544920018161&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20maximizar%20os%20resultados%20do%20meu%20neg%C3%B3cio!">
+          <BaseButton icon="increase" :narrow="true" target="_blank" href="https://api.whatsapp.com/send?phone=5544920018161&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20maximizar%20os%20resultados%20do%20meu%20neg%C3%B3cio!" @click="track">
             Quero resultado máximo!
           </BaseButton>
         </article>
@@ -93,9 +93,23 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import { useGtag } from 'vue-gtag-next'
 
 export default defineComponent({
   name: 'ThePrice',
+  setup () {
+    const { event } = useGtag()
+    const track = () => {
+      event('conversion', {
+        send_to: 'AW-10967913163/oDZzCMjn0oEYEMul9O0o',
+      })
+      event('ask_contact')
+    }
+
+    return {
+      track,
+    }
+  }
 })
 </script>
 
