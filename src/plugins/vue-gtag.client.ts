@@ -15,8 +15,7 @@ export default defineNuxtPlugin((nuxtApp) => {
         anonymize_ip: true,
         send_page_view: true,
         cookie_domain: 'auto',
-        event_time: eventTime(),
-        debug_mode: true
+        event_time: eventTime()
       }
     },
   })
