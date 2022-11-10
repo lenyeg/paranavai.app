@@ -1,7 +1,7 @@
 <template>
   <div id="faq" class="bg-gray-100">
     <BaseContainer>
-      <div class="sm:py-16">
+      <div class="py-16">
         <div class="mx-auto divide-y-2 divide-gray-200">
           <h2 class="text-3xl font-bold tracking-tight text-center text-gray-700 sm:text-4xl">
             Perguntas Frequentes
