@@ -110,8 +110,6 @@ const firstArray = [
       'O projeto Startup Digital consiste em consolidar a presença digital das empresas de Paranavaí através da responsabilização pelo perfis delas no Google fazendo-as serem encontradas digitalmente.',
 
       'Ainda assim, você terá acesso à um gerente de conta que acompanhará o posicionamento digital da sua empresa e manterá seus dados atualizados, e uma página de links customizado para ajudar na centralização das suas informações e divulgação do seu negócio.',
-
-      '',
     ],
   },
   {
