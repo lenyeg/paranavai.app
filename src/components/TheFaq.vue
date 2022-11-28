@@ -2,46 +2,91 @@
   <div id="faq" class="bg-gray-100">
     <BaseContainer>
       <div class="py-16">
-        <div class="mx-auto divide-y-2 divide-gray-200">
-          <h2 class="text-3xl font-bold tracking-tight text-center text-gray-700 sm:text-4xl">
+        <div class="mx-auto">
+          <h2 class="text-3xl font-bold tracking-tight mb-12 text-center text-gray-700 sm:text-4xl">
             Perguntas Frequentes
           </h2>
-          <dl class="mt-6 space-y-6 divide-y divide-gray-200">
-            <Disclosure v-for="faq in faqs" :key="faq.question" v-slot="{ open }" as="div" class="pt-6">
-              <dt class="text-lg">
-                <DisclosureButton class="flex items-center justify-between w-full text-left text-gray-400">
-                  <span class="font-medium text-gray-900">{{
-                    faq.question
-                  }}</span>
-                  <span class="flex items-center ml-6 h-7">
-                    <PlusCircleIcon
-                      :class="[
-                        open ? 'hidden' : 'block',
-                        'h-6 w-6 transform text-gray-700',
-                      ]"
-                      aria-hidden="true"
-                    />
-                    <MinusCircleIcon
-                      :class="[
-                        open ? 'block' : 'hidden',
-                        'h-6 w-6 transform text-gray-700',
-                      ]"
-                      aria-hidden="true"
-                    />
-                  </span>
-                </DisclosureButton>
-              </dt>
-              <DisclosurePanel as="dd" class="pr-12 mt-2">
-                <p
-                  v-for="answer in faq.answers"
-                  :key="answer"
-                  class="py-2 text-base text-gray-500"
-                >
-                  {{ answer }}
-                </p>
-              </DisclosurePanel>
-            </Disclosure>
-          </dl>
+          <section class="flex flex-col gap-6 lg:flex-row lg:gap-12">
+            <article class="flex-1 ">
+              <dl class="gap-6 divide-y divide-gray-200 flex flex-col lg:flex-wrap">
+                <Disclosure v-for="faq in firstArray" :key="faq.question" v-slot="{ open }" as="div" class="pt-6 lg:max-w-1/2 w-full flex-1">
+                  <dt class="text-lg">
+                    <DisclosureButton class="flex items-center justify-between w-full text-left text-gray-400">
+                      <span class="font-medium text-gray-900">{{
+                        faq.question
+                      }}</span>
+                      <span class="flex items-center ml-6 h-7">
+                        <PlusCircleIcon
+                          :class="[
+                            open ? 'hidden' : 'block',
+                            'h-6 w-6 transform text-gray-700',
+                          ]"
+                          aria-hidden="true"
+                        />
+                        <MinusCircleIcon
+                          :class="[
+                            open ? 'block' : 'hidden',
+                            'h-6 w-6 transform text-gray-700',
+                          ]"
+                          aria-hidden="true"
+                        />
+                      </span>
+                    </DisclosureButton>
+                  </dt>
+                  <DisclosurePanel as="dd" class="pr-12 mt-2">
+                    <p
+                      v-for="answer in faq.answers"
+                      :key="answer"
+                      class="py-2 text-base text-gray-500"
+                    >
+                      {{ answer }}
+                    </p>
+                  </DisclosurePanel>
+                </Disclosure>
+              </dl>
+            </article>
+            <article class="flex-1">
+              <dl class="gap-6 divide-y divide-gray-200 flex flex-col lg:flex-wrap">
+                <Disclosure v-for="faq in secondArray" :key="faq.question" v-slot="{ open }" as="div" class="pt-6 lg:max-w-1/2 w-full flex-1">
+                  <dt class="text-lg">
+                    <DisclosureButton class="flex items-center justify-between w-full text-left text-gray-400">
+                      <span class="font-medium text-gray-900">{{
+                        faq.question
+                      }}</span>
+                      <span class="flex items-center ml-6 h-7">
+                        <PlusCircleIcon
+                          :class="[
+                            open ? 'hidden' : 'block',
+                            'h-6 w-6 transform text-gray-700',
+                          ]"
+                          aria-hidden="true"
+                        />
+                        <MinusCircleIcon
+                          :class="[
+                            open ? 'block' : 'hidden',
+                            'h-6 w-6 transform text-gray-700',
+                          ]"
+                          aria-hidden="true"
+                        />
+                      </span>
+                    </DisclosureButton>
+                  </dt>
+                  <DisclosurePanel as="dd" class="pr-12 mt-2">
+                    <p
+                      v-for="answer in faq.answers"
+                      :key="answer"
+                      class="py-2 text-base text-gray-500"
+                    >
+                      {{ answer }}
+                    </p>
+                  </DisclosurePanel>
+                </Disclosure>
+              </dl>
+            </article>
+          </section>
+
+
+          
         </div>
       </div>
     </BaseContainer>
@@ -55,11 +100,14 @@ import {
   MinusCircleIcon,
 } from '@heroicons/vue/24/outline/index.js'
 
-const faqs = [
-  {
+// const firstCalc = faqs.slice(0, Math.round(Number(faqs.length)/2))
+// const secondCalc = faqs.slice(Math.round(Number(faqs.length)/2), faqs.length)
+
+const firstArray = [
+{
     question: 'O que é o Startup Digital?',
     answers: [
-      'O projeto Startup Digital consiste em consolidar a prenseça digital das empresas de Paranavaí através da responsabilização pelo perfis delas no Google fazendo-as serem encontradas digitalmente.',
+      'O projeto Startup Digital consiste em consolidar a presença digital das empresas de Paranavaí através da responsabilização pelo perfis delas no Google fazendo-as serem encontradas digitalmente.',
 
       'Ainda assim, você terá acesso à um gerente de conta que acompanhará o posicionamento digital da sua empresa e manterá seus dados atualizados, e uma página de links customizado para ajudar na centralização das suas informações e divulgação do seu negócio.',
 
@@ -77,7 +125,7 @@ const faqs = [
     question: 'O que o gerente da minha conta poderá fazer?',
     answers: [
       'A pessoa, que irá ser o seu gerente da sua conta conosco, será a sua interface para com a nossa equipe interna que executará as atividades. Afinal, o objetivo, através dele, é mantermos um relacionamento de longo prazo.',
-      'Além das nossas obrigações para com o projeto Startup Digital, você podererá conversar com o seu gerente de conta sobre quaisquer temas relacionados ao seu negócio. Colaboraremos com o que for possível. 🥰'
+      'Além das nossas obrigações para com o projeto Startup Digital, você poderá conversar com o seu gerente de conta sobre quaisquer temas relacionados ao seu negócio. Colaboraremos com o que for possível. 🥰'
     ],
   },
   {
@@ -99,6 +147,10 @@ const faqs = [
       'Ao longo dos 12 meses do projeto, você pagará uma mensalidade de R$ 49,90, ou seja, 1 + 11 de R$ 49,90 via Pix ou Boleto.'
     ],
   },
+]
+
+const secondArray = [
+  
   {
     question: 'Como faço para aderir ao Startup Digital?',
     answers: [
