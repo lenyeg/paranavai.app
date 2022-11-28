@@ -112,13 +112,7 @@
             <div
               class="flex justify-end flex-1"
             >
-              <img
-                src="/images/header.svg"
-                width="468"
-                height="360"
-                alt=""
-                class="object-cover w-full h-auto"
-              >
+              <AnimationsIllustrationHeader />
             </div>
           </section>
         </BaseContainer>
