@@ -3,13 +3,13 @@
     <BaseContainer>
       <div class="py-16">
         <div class="mx-auto">
-          <h2 class="text-3xl font-bold tracking-tight mb-12 text-center text-gray-700 sm:text-4xl">
+          <h2 class="mb-12 text-3xl font-bold tracking-tight text-center text-gray-700 sm:text-4xl">
             Perguntas Frequentes
           </h2>
           <section class="flex flex-col gap-6 lg:flex-row lg:gap-12">
             <article class="flex-1 ">
-              <dl class="gap-6 divide-y divide-gray-200 flex flex-col lg:flex-wrap">
-                <Disclosure v-for="faq in firstColumnFaqs" :key="faq.question" v-slot="{ open }" as="div" class="pt-6 lg:max-w-1/2 w-full flex-1">
+              <dl class="flex flex-col gap-6 divide-y divide-gray-200 lg:flex-wrap">
+                <Disclosure v-for="faq in firstColumnFaqs" :key="faq.question" v-slot="{ open }" as="div" class="flex-1 w-full pt-6 lg:max-w-1/2">
                   <dt class="text-lg">
                     <DisclosureButton class="flex items-center justify-between w-full text-left text-gray-400">
                       <span class="font-medium text-gray-900">{{
@@ -46,8 +46,8 @@
               </dl>
             </article>
             <article class="flex-1">
-              <dl class="gap-6 divide-y divide-gray-200 flex flex-col lg:flex-wrap">
-                <Disclosure v-for="faq in secondColumnFaqs" :key="faq.question" v-slot="{ open }" as="div" class="pt-6 lg:max-w-1/2 w-full flex-1">
+              <dl class="flex flex-col gap-6 divide-y divide-gray-200 lg:flex-wrap">
+                <Disclosure v-for="faq in secondColumnFaqs" :key="faq.question" v-slot="{ open }" as="div" class="flex-1 w-full pt-6 lg:max-w-1/2">
                   <dt class="text-lg">
                     <DisclosureButton class="flex items-center justify-between w-full text-left text-gray-400">
                       <span class="font-medium text-gray-900">{{
@@ -84,9 +84,6 @@
               </dl>
             </article>
           </section>
-
-
-          
         </div>
       </div>
     </BaseContainer>
@@ -101,7 +98,7 @@ import {
 } from '@heroicons/vue/24/outline/index.js'
 
 const faqs = [
-{
+  {
     question: 'O que é o Startup Digital?',
     answers: [
       'O projeto Startup Digital consiste em consolidar a presença digital das empresas de Paranavaí através da responsabilização pelo perfis delas no Google fazendo-as serem encontradas digitalmente.',
@@ -141,7 +138,7 @@ const faqs = [
     answers: [
       'Ao longo dos 12 meses do projeto, você pagará uma mensalidade de R$ 49,90, ou seja, 1 + 11 de R$ 49,90 via Pix ou Boleto.'
     ],
-  }, 
+  },
   {
     question: 'Como faço para aderir ao Startup Digital?',
     answers: [
@@ -175,6 +172,6 @@ const faqs = [
   },
 ]
 
-const firstColumnFaqs = faqs.slice(0, Math.round(Number(faqs.length)/2))
-const secondColumnFaqs = faqs.slice(Math.round(Number(faqs.length)/2), faqs.length)
+const firstColumnFaqs = faqs.slice(0, Math.round(Number(faqs.length) / 2))
+const secondColumnFaqs = faqs.slice(Math.round(Number(faqs.length) / 2), faqs.length)
 </script>

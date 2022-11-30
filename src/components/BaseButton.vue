@@ -1,5 +1,6 @@
 <template>
-  <a :class="classList"><span class="z-1">
+  <a :class="classList">
+    <span class="z-1">
       <slot />
     </span>
     <BaseIcon :icon="icon" />
