@@ -1,6 +1,6 @@
 {
   "name": "paranavai.app",
-  "version": "1.0.0",
+  "version": "1.0.0-test",
   "description": "",
   "scripts": {
     "build": "nuxt build",
