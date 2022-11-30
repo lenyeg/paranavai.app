@@ -9,7 +9,7 @@
           <section class="flex flex-col gap-6 lg:flex-row lg:gap-12">
             <article class="flex-1 ">
               <dl class="gap-6 divide-y divide-gray-200 flex flex-col lg:flex-wrap">
-                <Disclosure v-for="faq in firstArray" :key="faq.question" v-slot="{ open }" as="div" class="pt-6 lg:max-w-1/2 w-full flex-1">
+                <Disclosure v-for="faq in firstColumnFaqs" :key="faq.question" v-slot="{ open }" as="div" class="pt-6 lg:max-w-1/2 w-full flex-1">
                   <dt class="text-lg">
                     <DisclosureButton class="flex items-center justify-between w-full text-left text-gray-400">
                       <span class="font-medium text-gray-900">{{
@@ -47,7 +47,7 @@
             </article>
             <article class="flex-1">
               <dl class="gap-6 divide-y divide-gray-200 flex flex-col lg:flex-wrap">
-                <Disclosure v-for="faq in secondArray" :key="faq.question" v-slot="{ open }" as="div" class="pt-6 lg:max-w-1/2 w-full flex-1">
+                <Disclosure v-for="faq in secondColumnFaqs" :key="faq.question" v-slot="{ open }" as="div" class="pt-6 lg:max-w-1/2 w-full flex-1">
                   <dt class="text-lg">
                     <DisclosureButton class="flex items-center justify-between w-full text-left text-gray-400">
                       <span class="font-medium text-gray-900">{{
@@ -100,10 +100,7 @@ import {
   MinusCircleIcon,
 } from '@heroicons/vue/24/outline/index.js'
 
-// const firstCalc = faqs.slice(0, Math.round(Number(faqs.length)/2))
-// const secondCalc = faqs.slice(Math.round(Number(faqs.length)/2), faqs.length)
-
-const firstArray = [
+const faqs = [
 {
     question: 'O que é o Startup Digital?',
     answers: [
@@ -144,11 +141,7 @@ const firstArray = [
     answers: [
       'Ao longo dos 12 meses do projeto, você pagará uma mensalidade de R$ 49,90, ou seja, 1 + 11 de R$ 49,90 via Pix ou Boleto.'
     ],
-  },
-]
-
-const secondArray = [
-  
+  }, 
   {
     question: 'Como faço para aderir ao Startup Digital?',
     answers: [
@@ -181,4 +174,7 @@ const secondArray = [
     ],
   },
 ]
+
+const firstColumnFaqs = faqs.slice(0, Math.round(Number(faqs.length)/2))
+const secondColumnFaqs = faqs.slice(Math.round(Number(faqs.length)/2), faqs.length)
 </script>
