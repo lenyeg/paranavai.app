@@ -7,8 +7,8 @@ Usamos [Nuxt 3](https://v3.nuxtjs.org) leia a documentação deles para entender
 Make sure to install the dependencies:
 
 ```bash
-# pnpm
-pnpm i
+# yarn
+yarn install
 ```
 
 ## Development Server
@@ -16,7 +16,7 @@ pnpm i
 Start the development server on http://localhost:3000
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 ## Production
@@ -24,13 +24,7 @@ npm run dev
 Build the application for production:
 
 ```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
+yarn build
 ```
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
