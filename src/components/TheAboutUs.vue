@@ -4,7 +4,7 @@
       id="about-us"
       class="flex flex-col items-center justify-center my-16 text-gray-500 lg:my-32 gap-x-8 gap-y-16"
     >
-      <BaseSection class="lg:text-right">
+      <BaseSection>
         <template #text>
           <p class="text-2xl font-bold text-gray-700 lg:text-3xl">
             Se eu procurar no Google um produto ou serviço que você oferece,
