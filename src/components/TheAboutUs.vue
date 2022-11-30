@@ -29,9 +29,10 @@
           >
         </template>
       </BaseSection>
-      <BaseSection class="lg:flex-row-reverse lg:text-left">
+      <section class="lg:flex-row-reverse lg:text-left">
         <!-- vai estar aqui -->
-      </BaseSection>
+        <TheTeam />
+      </section>
     </div>
   </BaseContainer>
 </template>
