@@ -15,12 +15,11 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   name: 'TheTeam',
   setup () {
-
     const lenyegers = [
       { src: '/images/self-1.png', alt: 'Core team', name: 'André Vandal', desc: 'CEO', openned: false },
       { src: '/images/self-2.png', alt: 'Core team', name: 'Ana C Longini', desc: 'PM', openned: false },
-      { src: '/images/self-3.png', alt: 'Core team', name: 'Pedro Henrique', desc: 'Design', openned: false  },
-      { src: '/images/self-4.png', alt: 'Core team', name: 'Lucas Ribeiro', desc: 'Web Developer', openned: false  }
+      { src: '/images/self-3.png', alt: 'Core team', name: 'Pedro Henrique', desc: 'Design', openned: false },
+      { src: '/images/self-4.png', alt: 'Core team', name: 'Lucas Ribeiro', desc: 'Web Developer', openned: false }
     ]
 
     return { lenyegers }
