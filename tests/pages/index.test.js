@@ -15,5 +15,3 @@ describe('ssr', async () => {
     expect(html).toContain('O mundo evoluiu')
   })
 })
-
-// só para ver test
