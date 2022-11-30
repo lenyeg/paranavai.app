@@ -30,30 +30,7 @@
         </template>
       </BaseSection>
       <BaseSection class="lg:flex-row-reverse lg:text-left">
-        <template #image>
-          <img
-            src="/images/about-two.svg"
-            alt="Imagem de uma mulher olhando avaliações"
-            width="400"
-            height="257"
-            class="object-cover"
-          >
-        </template>
-        <template #text>
-          <p class="text-2xl text-gray-700 lg:text-3xl">
-            <strong>As pessoas conhecem o nível de excelência do seu atendimento,
-              produto ou serviço?</strong>
-          </p>
-          <p>
-            Ter boas avaliações no Google é fundamental para que seu negócio ocupe
-            as primeiras posições no buscador.
-          </p>
-          <p>
-            Além disso, pessoas que precisam dos seus produtos/serviços e não
-            conhecem sua empresa, se guiam através das avaliações para fechar
-            negócio.
-          </p>
-        </template>
+        <!-- vai estar aqui -->
       </BaseSection>
     </div>
   </BaseContainer>
