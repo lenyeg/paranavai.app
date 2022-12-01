@@ -10,6 +10,7 @@
     "postinstall": "patch-package; nuxt prepare",
     "test": "npx vitest run --dir tests",
     "lint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore .",
+    "lint:fix": "eslint --ext .js,.ts,.vue --ignore-path .gitignore . --fix",
     "prepare": "husky install"
   },
   "engines": {
