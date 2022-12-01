@@ -1,7 +1,7 @@
 <template>
   <section class="flex flex-col items-center gap-12 text-center lg:flex-row-reverse">
     <article class="flex flex-col items-center justify-center gap-4 flex-1">
-      <TheCrew />
+      <!-- <TheCrew /> -->
       <span class="font-bold text-2xl text-gray-700 md:text-3xl">Nossos especialistas</span>
       <p class="text-center md:text-2xl">
         Nós da paranavai.app temos uma equipe especialista em todo processo necessário para inserir sua empresa no meio digital e elevar os resultados da sua empresa ao nível máximo.
