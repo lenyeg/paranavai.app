@@ -19,7 +19,7 @@
             width="85"
             height="85"
             class="w-[50px] h-[50px] lg:w-[85px] lg:h-[85px] rounded-full bg-[#288877]"
-          />
+          >
           <Transition
             enter-active-class="duration-150 ease-in-out origin-left transition-all"
             enter-from-class="scale-x-0 opacity-0"
@@ -50,7 +50,7 @@ import { defineComponent, reactive } from 'vue'
 
 export default defineComponent({
   name: 'TheTeam',
-  setup() {
+  setup () {
     let lenyegers = reactive([
       {
         src: '/images/ceo.png',
@@ -83,7 +83,7 @@ export default defineComponent({
     ])
 
     const selectItem = (selectedIndex) => {
-      const itemAlreadySelectedIndex = lenyegers.findIndex((el) => el.opened)
+      const itemAlreadySelectedIndex = lenyegers.findIndex(el => el.opened)
 
       lenyegers = lenyegers.map((el) => {
         el.opened = false
