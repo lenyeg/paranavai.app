@@ -7,8 +7,11 @@
         Nós da paranavai.app temos uma equipe especialista em todo processo necessário para inserir sua empresa no meio
         digital e elevar os resultados da sua empresa ao nível máximo.
       </p>
-      <BaseButton icon="click" target="_blank"
-        href="https://api.whatsapp.com/send?phone=5544920018161&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20maximizar%20os%20resultados%20do%20meu%20neg%C3%B3cio!">
+      <BaseButton
+        icon="click"
+        target="_blank"
+        href="https://api.whatsapp.com/send?phone=5544920018161&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20maximizar%20os%20resultados%20do%20meu%20neg%C3%B3cio!"
+      >
         Quero ser encontrado!
       </BaseButton>
     </article>
@@ -22,7 +25,7 @@
 import { defineComponent, ref, computed } from 'vue'
 export default defineComponent({
   name: 'TheTeam',
-  setup() {
+  setup () {
     const selectedImage = ref(0)
 
     const images = [
