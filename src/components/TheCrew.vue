@@ -5,7 +5,6 @@
         v-for="item in lenyegers"
         :key="item.src"
         class="inline-block bg-gradient-to-r from-[#E76F51] via-[#F4A261] to-[#E9C46A] p-1 rounded-full"
-        @click="showInfoEmployee()"
       >
         <div class="flex justify-center items-center object-scale-down gap-2 min-w-max">
           <img
