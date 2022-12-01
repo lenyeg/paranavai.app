@@ -1,4 +1,4 @@
-import { defineNuxtConfig } from 'nuxt'
+import { defineNuxtConfig } from 'nuxt/config'
 
 const { API_BASE_URL, GA_MEASUREMENT_ID, GA_HOST, G_ADWORDS_ID } = process.env
 
