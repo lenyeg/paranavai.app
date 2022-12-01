@@ -12,9 +12,9 @@
             draggable="false"
             :src="item.src"
             alt=""
-            width="50"
-            height="50"
-            class="w-[50px] h-[50px] rounded-full bg-[#288877]"
+            width="85"
+            height="85"
+            class="w-[50px] h-[50px] lg:w-[85px] lg:h-[85px] rounded-full bg-[#288877]"
           >
           <div v-show="item.openned" class="flex flex-col justify-center items-center pr-6 text-gray-800">
             <span class="whitespace-nowrap font-bold">{{ item.name }}</span>

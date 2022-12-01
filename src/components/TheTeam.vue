@@ -4,7 +4,9 @@
       <TheCrew />
       <span class="font-bold text-2xl text-gray-700 md:text-3xl">Nossos especialistas</span>
       <p class="text-center md:text-2xl">
-        Nós da paranavai.app temos uma equipe especialista em todo processo necessário para inserir sua empresa no meio
+        Nós da <span class="underline decoration-[#F4A261] decoration-2 decoration-wavy">paranavai.app</span> temos uma
+        equipe
+        especialista em todo processo necessário para inserir sua empresa no meio
         digital e elevar os resultados da sua empresa ao nível máximo.
       </p>
       <BaseButton
@@ -16,7 +18,7 @@
       </BaseButton>
     </article>
     <article class="flex items-center justify-center flex-1">
-      <img draggable="false" :src="heroImg.src" width="620" class="rounded" @click="changeImage()">
+      <img draggable="false" :src="heroImg.src" width="620" class="rounded">
     </article>
   </section>
 </template>
