@@ -1,13 +1,20 @@
 <template>
-  <section class="flex flex-col items-center gap-12 text-center lg:flex-row-reverse">
-    <article class="flex flex-col items-center justify-center gap-4 flex-1">
+  <section
+    class="flex flex-col items-center gap-12 text-center lg:flex-row-reverse"
+  >
+    <article
+      class="flex flex-col items-center justify-between gap-1 lg:gap-8 flex-1"
+    >
       <TheCrew />
       <span class="font-bold text-2xl text-gray-700 md:text-3xl">Nossos especialistas</span>
       <p class="text-center md:text-2xl">
-        Nós da <span class="underline decoration-[#F4A261] decoration-2 decoration-wavy">paranavai.app</span> temos uma
-        equipe
-        especialista em todo processo necessário para inserir sua empresa no meio
-        digital e elevar os resultados da sua empresa ao nível máximo.
+        Nós da
+        <span
+          class="underline decoration-[#F4A261] decoration-2 decoration-wavy"
+        >paranavai.app</span>
+        temos uma equipe especialista em todo processo necessário para inserir
+        sua empresa no meio digital e elevar os resultados da sua empresa ao
+        nível máximo.
       </p>
       <BaseButton
         icon="click"
