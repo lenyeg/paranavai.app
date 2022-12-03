@@ -19,13 +19,16 @@ const props = defineProps({
   },
   narrow: {
     type: Boolean,
-    default: false
-  }
+    default: false,
+  },
 })
 
-const classList = [[$style.button], {
-  [$style['button--narrow']]: props.narrow
-}]
+const classList = [
+  [$style.button],
+  {
+    [$style['button--narrow']]: props.narrow,
+  },
+]
 </script>
 
 <style lang="postcss" module>
@@ -43,7 +46,7 @@ const classList = [[$style.button], {
   }
 
   &--narrow {
-    @apply w-[387px] max-w-[95%]
+    @apply w-[387px] max-w-[95%];
   }
 }
 </style>
