@@ -30,7 +30,6 @@
         </template>
       </BaseSection>
       <section class="lg:flex-row-reverse lg:text-left">
-        <!-- vai estar aqui -->
         <TheTeam />
       </section>
     </div>
