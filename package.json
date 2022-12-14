@@ -7,7 +7,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "patch-package; nuxt prepare",
+    "postinstall": "nuxt prepare",
     "test": "npx vitest run --dir tests",
     "lint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore .",
     "prepare": "husky install"
@@ -48,7 +48,7 @@
   "dependencies": {
     "@headlessui/vue": "^1.7.1",
     "@heroicons/vue": "^2.0.11",
-    "@vueuse/motion": "^2.0.0-beta.12",
+    "@vueuse/motion": "^2.0.0-beta.25",
     "patch-package": "^6.5.0",
     "vue-lite-youtube-embed": "^1.0.4"
   }
