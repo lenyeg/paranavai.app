@@ -4,7 +4,7 @@
       id="about-us"
       class="flex flex-col items-center justify-center my-16 text-gray-500 lg:my-32 gap-x-8 gap-y-16"
     >
-      <BaseSection class="lg:text-right">
+      <BaseSection>
         <template #text>
           <p class="text-2xl font-bold text-gray-700 lg:text-3xl">
             Se eu procurar no Google um produto ou serviço que você oferece,
@@ -29,32 +29,9 @@
           >
         </template>
       </BaseSection>
-      <BaseSection class="lg:flex-row-reverse lg:text-left">
-        <template #image>
-          <img
-            src="/images/about-two.svg"
-            alt="Imagem de uma mulher olhando avaliações"
-            width="400"
-            height="257"
-            class="object-cover"
-          >
-        </template>
-        <template #text>
-          <p class="text-2xl text-gray-700 lg:text-3xl">
-            <strong>As pessoas conhecem o nível de excelência do seu atendimento,
-              produto ou serviço?</strong>
-          </p>
-          <p>
-            Ter boas avaliações no Google é fundamental para que seu negócio ocupe
-            as primeiras posições no buscador.
-          </p>
-          <p>
-            Além disso, pessoas que precisam dos seus produtos/serviços e não
-            conhecem sua empresa, se guiam através das avaliações para fechar
-            negócio.
-          </p>
-        </template>
-      </BaseSection>
+      <section class="lg:flex-row-reverse lg:text-left">
+        <TheTeam />
+      </section>
     </div>
   </BaseContainer>
 </template>
